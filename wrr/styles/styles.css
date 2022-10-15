@@ -1,12 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #d8cc8e   ;
+    --secondary-color: #393837 ;
+    --accent1-color: #60584e;
+    --accent2-color: #ddded3;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: 'Bangers', Georgia, serif;
+    --paragraph-font: 'Roboto', Verdana, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #393837;  /* headlines on a white background */ 
+    --headline-color-on-color: #ddded3; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #393837; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #ddded3; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #60584e  ;
+    --nav-link-color: #393837;
+    --nav-background-color: #d8cc8e;
+    --nav-hover-link-color: #ddded3;
+    --nav-hover-background-color: #60584e;
+}
 /* body */
 body {
     background-color: #ddded3;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 #content {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #ddded3;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 
 
@@ -16,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
     color:#60584e;
     padding: 10px;
     text-align: center;
+}
+
+h2 {
+    margin: 0;
 }
 
 p {
@@ -29,10 +68,15 @@ p {
 
 .msg {
     background-color: #60584e;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .home-title {
     color:#393837;
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -41,10 +85,13 @@ h4 {
 
 .msg h2 {
     color:#ddded3;
+    font-family: var(--heading-font);
 }
 
 .msg p {
     color: #ddded3;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 /* navigation */
@@ -57,7 +104,7 @@ nav a {
     text-align: center;
     color: #393837;
     text-decoration: none;
-    padding: .5em .5em;
+    padding: 35px;
 }
 
 nav li {
@@ -79,6 +126,10 @@ nav a:hover {
     background-color: #d8cc8e;
     color: #393837;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -109,13 +160,26 @@ img {
     max-width: 100%;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
+.card-img {
+    border: 10px solid #393837;
+}
+
 .icon {
     width: 45px;
     height: 45px;
+    padding-top: 10px;
 }
 
 .logo {
     width: 150px;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
 
 
@@ -123,6 +187,8 @@ img {
 /* footer */
 footer {
     background-color:#d8cc8e;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer h3 {
