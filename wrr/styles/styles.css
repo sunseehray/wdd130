@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap');
 
-/* body */
 body {
     background-color: #ddded3;
     /* font-family: 'Roboto', Verdana, sans-serif;
@@ -39,7 +38,7 @@ p {
     padding: 10px;
     text-align: center;
     font-family: 'Roboto', Verdana, sans-serif;
-    font-size: 22px;
+    /* font-size: 22px; */
 }
 
 /* navigation */
@@ -48,7 +47,7 @@ nav {
     padding: 1em;
     display: flex;
     justify-content: space-around;
-    margin: 0;
+    /* margin: 0; */
     /* align-items: center; */
 }
     
@@ -85,6 +84,10 @@ header {
     /* margin-top: 100px; */
 }
 
+#hero-msg h4 {
+    font-family: 'Roboto', Verdana, sans-serif;
+}
+
 #hero-img{
     width: 100%;
 }
@@ -92,8 +95,8 @@ header {
 .home-title {
     color:#393837;
     font-family: 'Bangers', Georgia, serif;;
-    font-size: 2.75em;
-    margin-top: 10px;
+    font-size: 2em;
+    /* margin-top: 10px; */
     }
 
 .book, .join {
@@ -153,8 +156,9 @@ main, section {
 }
 
 .rivers-card, .camping-card, .rapids-card {
-margin: 25px auto;
-width: 90%;
+    margin: 25px auto;
+    width: 90%;
+    font-family: 'Roboto', Verdana, sans-serif;
 }
 
 #background {
@@ -173,7 +177,7 @@ width: 90%;
 
 .msg {
     background-color: #60584e;
-    /* line-height: 1.5em; */
+    line-height: 1.5em;
     padding: 55px;
     grid-column: 6/10;
     grid-row: 6/7;
@@ -183,7 +187,7 @@ width: 90%;
 .msg h2 {
     color:#ddded3;
     font-family: 'Bangers', Georgia, serif;
-    /* font-size: 2em; */
+    font-size: 2em;
 }
 
 .msg p {
@@ -247,22 +251,22 @@ main .home-grid {
 
 
 h2 {
-margin: 0;
+    margin: 0;
 }
 
 #hero-msg h1, #hero-msg h4 {
-text-align: center;
-color: white;
+    text-align: center;
+    color: white;
 }
 
-h4 {
-color: #60584e;
-font-family: 'Roboto', Verdana, sans-serif;
-}
+/* h4 {
+    color: #60584e;
+    font-family: 'Roboto', Verdana, sans-serif;
+} */
 
-.card-img, .mountains {
-width: 100%;
-}
+/* .card-img, .mountains {
+    width: 100%;
+} */
 
 .rivers-card {
     grid-column: 2/4;
@@ -317,7 +321,7 @@ width: 100%;
         display: none;
     }
     .home-title {
-        font-size: 25px;
+        /* font-size: 25px; */
         color: #6f7364;
     }
     .rivers-card, .camping-card, .rapids-card { 
