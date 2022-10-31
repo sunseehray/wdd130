@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    width: 200px;
+    /* width: 200px; */
     height: 100px;
     position: relative;
 }
@@ -310,16 +310,16 @@ h2 {
         display: block;
         padding: 15px;
     }
-    /* own code with nav ul */
-    nav ul {
-        display: block;
-        padding: 15px;
-    }
+
     #hero {
         margin-top: 0;
     }
     #hero-msg {
         margin-top: 0;
+    }
+
+    #hero-msg h1 {
+        color: #393837;
     }
     #hero-msg h4 {
         display: none;
