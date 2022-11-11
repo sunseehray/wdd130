@@ -96,7 +96,7 @@ header {
 
 .home-title {
     color:#393837;
-    font-family: 'Bangers', Georgia, serif;;
+    font-family: 'Bangers', Georgia, serif;
     font-size: 2em;
     /* margin-top: 10px; */
     }
@@ -291,17 +291,175 @@ h2 {
     padding-top: 15px;
 } */
 
+/* subpage - rivers.html style */
+
+#rivers-hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#rivers-hero-img {
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+.loader {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.river-title {
+    font-size: 10em;
+    font-family: 'Bangers', Georgia, serif;
+    letter-spacing: .1em;
+    color: rgba(96,88,78,1);
+    text-shadow: 5px 5px 10px #000000;
+}
+
+
+.idaho-card, .arizona-card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: #60584e;
+    margin-top: -5px;
+}
+
+.rivers-grid img {
+    box-shadow: 5px 5px 10px #000;
+    transition: transform .5s;
+}
+
+.rivers-grid img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.utah-card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: #d8cc8e;
+    margin-top: -5px;
+}
+
+.idaho-card h2, .idaho-card p , .arizona-card h2, .arizona-card p{
+    color: #d8cc8e;
+}
+
+.idaho-card img, .arizona-card img {
+    grid-column: 2/5;
+    grid-row: 2/12;
+}
+
+.idaho-card div, .arizona-card div{
+    grid-column: 6/11;
+    grid-row: 2/12;
+}
+
+.idaho-card h2, .utah-card h2, .arizona-card h2 {
+    text-align: left;
+    font-family: 'Bangers', Georgia, serif;
+}
+
+.idaho-card p, .utah-card p, .arizona-card p {
+    text-align: left;
+    font-family: 'Roboto', Verdana, sans-serif;
+}
+
+.utah-card h2 {
+    color: #393837;
+}
+
+.utah-card img {
+    grid-column: 2/5;
+    grid-row: 2/12;
+}
+
+.utah-card div {
+    grid-column: 6/11;
+    grid-row: 2/12;
+}
+
+.utah-card h2, .utah-card p {
+    text-align: left;
+}
+
+.utah-card h2{
+    font-family: 'Bangers', Georgia, serif;
+}
+
+.utah-card p {
+    font-family: 'Roboto', Verdana, sans-serif;
+}
+
+/* Subpage Rates/Dates style */
+
+#rates-subtitle {
+    margin-top: 65px;
+}
+
+.rates-grid section h1 {
+    font-family: 'Bangers', Georgia, serif;
+}
+
+.rates-grid section p {
+    font-family: 'Roboto', Verdana, sans-serif;
+}
+
+.rates-grid {
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(26, 1fr);
+}
+
+.rates-grid img {
+    box-shadow: 5px 5px 10px #393837;
+    transition: transform .5s;
+}
+
+.rates-grid img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+.canyon_3n-card{
+    grid-column: 2/6;
+    grid-row: 2/13;
+}
+.canyon_6n-card{
+    grid-column: 7/11;
+    grid-row: 2/13;
+}
+.salmon-card {
+    grid-column: 2/6;
+    grid-row: 14/25;
+}
+.desolation-card {
+    grid-column: 7/11;
+    grid-row: 14/25;
+}
 /* Media Query for Responsive Design */
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .rivers-grid, #rivers-hero {
         display: block;
         height: auto;
     }
     
-    main .home-grid {
+    main .home-grid, main .rivers-grid {
         display: block;
         height: auto;
+    }
+
+    .idaho-card, .utah-card, .arizona-card {
+        display: block;
+        height: auto;
+    }
+
+    .idaho-card img, .utah-card img, .arizona-card img {
+        margin-top: 30px;
+        width: 80%;
     }
     nav, footer {
         flex-direction: column;
@@ -314,7 +472,7 @@ h2 {
     #hero {
         margin-top: 0;
     }
-    #hero-msg {
+    #hero-msg, .river-title {
         margin-top: 0;
     }
 
@@ -324,9 +482,16 @@ h2 {
     #hero-msg h4 {
         display: none;
     }
-    .home-title {
+    .home-title, .river-title {
         /* font-size: 25px; */
         color: #6f7364;
+    }
+    .river-title {
+        margin-top: 10px;
+        font-size: 3em;
+        text-shadow: none;
+        color: #60584e;
+        margin-bottom: 20px;
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
@@ -343,6 +508,34 @@ h2 {
     footer {
         margin-top: 25px;
     }
+
+    .idaho-card h2, .utah-card h2, .arizona-card h2 {
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: center;
+    }
+
+    .idaho-card p, .utah-card p, .arizona-card p{
+        width: 80%;
+        margin-left: 25px;
+    }
+
+    .rates-grid {
+        display: block;
+        width: 80%;
+        margin: 0px auto;
+        background-color: #ddded3;
+    }
+
+    .rates-grid p, .rivers-grid p {
+        display: none;
+    }
+
+    .rivers-grid img {
+        height: 400px;
+        width: auto;
+    }
+
 }
             
 /* DO NOT ADD ANYTHING AFTER THIS LINE */
