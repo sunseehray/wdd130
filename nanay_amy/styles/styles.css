@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+    position: relative;
+}
+
+/* Navigation */
+nav {
+    background-color: #E2B21A;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-align: center;
+    color: #164D7A;
+    text-decoration: none;
+    padding: .5em .75em;
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+nav a:hover{
+    background-color: #164D7A;
+    color: #E2B21A;
+    border-radius: 5px;
+    text-decoration: underline;
+    box-shadow: 4px 4px 4px #000;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #E2B21A;
+}
+/* Main */
+
+.banner {
+    width: 1600px;
+    opacity: .8;
+}
 form {
     /* Center the form on the page */
     margin: 0 auto;
