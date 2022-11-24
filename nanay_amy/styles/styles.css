@@ -15,6 +15,30 @@ body {
     position: relative;
 }
 
+.book, .services {
+    display: inline;
+    background-color: #E08095;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 25px;
+    box-shadow: 3px 3px 4px grey;
+    height: fit-content;
+    text-align: center;
+}
+
+.button-box a {
+    color: white;
+    background-color: #E08095;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+.book:hover, .services:hover {
+    color:#E08095;
+    background-color: #164D7A;
+}
+
 /* Navigation */
 nav {
     background-color: #E2B21A;
@@ -47,10 +71,105 @@ header {
 }
 /* Main */
 
+div .hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 200px 1fr 1fr;
+}
+
 .banner {
-    width: 1600px;
+    width: 100%;
     opacity: .8;
 }
+
+.banner-box {
+    grid-column: 1/13;
+    grid-row: 1/5;
+    z-index: -1;
+}
+
+.nanay-amy-title {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    margin: 0 auto;
+}
+
+.nanay-amy-title img {
+    width: 400px;
+    height: 200px;
+}
+
+.hero .button-box {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.main-content {
+    background-color: #48CCAA;
+    margin: 0 auto;
+    padding: 3em;
+    color: white;
+}
+
+.main-content h1 {
+    font-family: 'Fuzzy Bubbles', Georgia, serif;
+}
+
+.main-content p {
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+.sub-content {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 80% 20%;
+}
+.sub-content img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    box-shadow: 5px 5px 10px gray;
+    margin: 0 auto;
+    margin-top: -50px;
+    width: 80%;
+}
+
+.sub-content .button-box {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+footer {
+    background-color: #E2B21A;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 50px;
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer .socialmedia img {
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px gray;
+    width: 50px;
+    transition: transform .5s;
+}
+
+footer .socialmedia img:hover {
+    transform: scale(1.1);
+}
+
 form {
     /* Center the form on the page */
     margin: 0 auto;
