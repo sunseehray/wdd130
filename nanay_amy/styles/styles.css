@@ -381,7 +381,7 @@ button {
 }
 
 @media screen and (max-width: 900px) {
-    .hero, .banner-box, .sub-content, .header, {
+    .hero, .banner-box, .sub-content, .header {
         display: block;
     }
 
