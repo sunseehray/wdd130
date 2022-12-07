@@ -20,7 +20,7 @@ body {
     box-shadow: 0px 4px 5px #000;
 }
 
-.book, .services {
+.book, .services, .call-us {
     display: inline;
     background-color: #E08095;
     padding: 15px 30px;
@@ -39,7 +39,7 @@ body {
     font-family: 'Raleway', Verdana, sans-serif;
 }
 
-.book:hover, .services:hover {
+.book:hover, .services:hover, .call-us:hover {
     color:#E08095;
     background-color: #164D7A;
 }
@@ -266,8 +266,64 @@ div .hero {
     grid-row: 4/5;
 }
 
+/* Page 3 - Contact Us */
 
+div .hero-3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr .5fr 1fr;
+}
 
+.hero-3 img {
+    opacity: .5;
+}
+
+.hero-3 h1 {
+    grid-column: 2/3;
+    grid-row: 2/3;  
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', Georgia, serif;
+    font-size: 5em;
+    color: #123f64;
+}
+
+.hero-3 div.button-box {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: 0 auto;
+}
+
+.hero-3-content h2 {
+    font-family: 'Fuzzy Bubbles', Georgia, serif;
+    color: #123f64;
+    margin-left: 50px;
+}
+
+.hero-3-content p {
+    font-family: 'Raleway', Verdana, sans-serif;
+    line-height: 1.5em;
+    margin-left: 65px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+div.social-media-buttons {
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+}
+
+div.social-media-buttons img{
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 25px;
+    transition: transform .3s;
+    margin: 15px;
+}
+
+div.social-media-buttons img:hover {
+    transform: scale(1.1);
+    opacity: .8;
+}
 /* footer */
 
 footer {
@@ -307,6 +363,8 @@ form {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+    background-color: #E08095;
+    margin-bottom: 25px;
 }
 
 ul {
@@ -324,6 +382,7 @@ label {
     display: inline-block;
     width: 90px;
     text-align: right;
+    font-family: 'Raleway', Verdana, sans-serif;
 }
 
 input,
@@ -363,6 +422,7 @@ button {
     /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
     margin-left: 0.5em;
+    font-family: 'Raleway', Verdana, sans-serif;
 }
 
 #feedback {
@@ -401,8 +461,13 @@ button {
         margin-top: 0;
     }
 
-    .hero-2 .banner {
+    .hero-2 .banner, .hero-3 .banner{
         display: none;
+    }
+
+    .hero-3 {
+        height: 500px;
+        background-color: #48CCAA;
     }
     
     .nanay-amy-title h1 {
